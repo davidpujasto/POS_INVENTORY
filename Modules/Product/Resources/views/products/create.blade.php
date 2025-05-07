@@ -18,7 +18,7 @@
                 <div class="col-lg-12">
                     @include('utils.alerts')
                     <div class="form-group">
-                        <button class="btn btn-primary">Create Product <i class="bi bi-check"></i></button>
+                        <button class="btn btn-info">Create Product <i class="bi bi-check"></i></button>
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -50,7 +50,7 @@
                                             @endforeach
                                         </select>
                                         <div class="input-group-append d-flex">
-                                            <button data-toggle="modal" data-target="#categoryCreateModal" class="btn btn-outline-primary" type="button">
+                                            <button data-toggle="modal" data-target="#categoryCreateModal" class="btn btn-outline-info" type="button">
                                                 Add
                                             </button>
                                         </div>

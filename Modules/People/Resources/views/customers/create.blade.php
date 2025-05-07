@@ -18,7 +18,7 @@
                 <div class="col-lg-12">
                     @include('utils.alerts')
                     <div class="form-group">
-                        <button class="btn btn-primary">Create Customer <i class="bi bi-check"></i></button>
+                        <button class="btn btn-info">Create Customer <i class="bi bi-check"></i></button>
                     </div>
                 </div>
                 <div class="col-lg-12">

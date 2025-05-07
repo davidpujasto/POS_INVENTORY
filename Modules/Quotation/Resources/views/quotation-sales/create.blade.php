@@ -88,7 +88,7 @@
                                         <div class="input-group">
                                             <input id="paid_amount" type="text" class="form-control" name="paid_amount" required>
                                             <div class="input-group-append">
-                                                <button id="getTotalAmount" class="btn btn-primary" type="button">
+                                                <button id="getTotalAmount" class="btn btn-info" type="button">
                                                     <i class="bi bi-check-square"></i>
                                                 </button>
                                             </div>
@@ -105,7 +105,7 @@
                             <input type="hidden" name="quotation_id" value="{{ $quotation_id }}">
 
                             <div class="mt-3">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info">
                                     Create Sale <i class="bi bi-check"></i>
                                 </button>
                             </div>

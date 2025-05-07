@@ -47,7 +47,6 @@ class ProductController extends Controller
 
     public function show(Product $product) {
         abort_if(Gate::denies('show_products'), 403);
-
         return view('product::products.show', compact('product'));
     }
 

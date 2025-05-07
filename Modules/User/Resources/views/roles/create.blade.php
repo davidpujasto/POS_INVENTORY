@@ -26,7 +26,7 @@
                 <form action="{{ route('roles.store') }}" method="POST">
                     @csrf
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Create Role <i class="bi bi-check"></i>
+                        <button type="submit" class="btn btn-info">Create Role <i class="bi bi-check"></i>
                         </button>
                     </div>
                     <div class="card">

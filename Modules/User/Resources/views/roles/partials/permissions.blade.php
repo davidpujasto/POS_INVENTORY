@@ -1,4 +1,4 @@
 @foreach($data->getPermissionNames() as $permission)
-    <span class="badge badge-primary">{{ $permission }}</span>
+    <span class="badge badge-info">{{ $permission }}</span>
 @endforeach
-<a class="text-primary" href="{{ route('roles.edit', $data->id) }}">.......</a>
+<a class="text-info" href="{{ route('roles.edit', $data->id) }}">.......</a>

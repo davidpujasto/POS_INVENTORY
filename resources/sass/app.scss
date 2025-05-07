@@ -1,22 +1,38 @@
+
+
+
 // CoreUI
 @import '@coreui/coreui/scss/coreui';
 
-//Extra Overrides
-//.c-sidebar {
-//    background: #0f766e;
+
+// $primary: #321fdb;
+// $secondary: #6c757d;
+// $success: #1cc88a;
+// $info: #36b9cc;
+// $warning: #f6c23e;
+// $danger: #e74a3b;
+// $light: #f8f9fc;
+// $dark: #5a5c69;
+
+// Extra Overrides
+// .c-sidebar {
+//    background: #212631;
 //    color: #fff;
-//}
-//
+// }
+
 .c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle {
     color: #fff;
     background: $primary;
 }
 //
 //
-//.c-sidebar .c-sidebar-nav-link:hover {
+// .c-sidebar .c-sidebar-nav-link:hover {
 //    color: #fff;
-//    background: #0d9488;
-//}
+//    background: #212631;
+   
+// }
+
+
 
 .btn:not([class*=ghost]):not([class*=link]):not([class*=outline]):not([class*=transparent]) {
     border: 0;

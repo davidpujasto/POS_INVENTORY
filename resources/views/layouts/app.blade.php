@@ -12,8 +12,24 @@
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('images/favicon.png') }}">
-
+  
     @include('includes.main-css')
+
+    <style>
+    .input-group-text i {
+        transition: color 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #0dcaf0;
+        box-shadow: 0 0 0 0.2rem rgba(10, 58, 202, 0.25);
+    }
+
+    .input-group:focus-within .input-group-text i {
+        color: #0dcaf0;
+    }
+  </style>
+    
 </head>
 
 <body class="c-app">
@@ -34,6 +50,7 @@
         </div>
 
         @include('layouts.footer')
+
     </div>
 
     @include('includes.main-js')
@@ -55,5 +72,12 @@
      console.error("Service workers are not supported.");
   }
 </script>
+
+<script>
+    Livewire.on('showCheckoutModal', () => {
+        $('#checkoutModal').modal('show');
+    });
+</script>
+
 </body>
 </html>

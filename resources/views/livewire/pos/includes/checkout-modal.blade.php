@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="checkoutModalLabel">
-                    <i class="bi bi-cart-check text-primary"></i> Confirm Sale
+                    <i class="bi bi-cart-check text-info"></i> Confirm Sale
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -29,16 +29,20 @@
                             <input type="hidden" value="{{ $global_discount }}" name="discount_percentage">
                             <input type="hidden" value="{{ $shipping }}" name="shipping_amount">
                             <div class="form-row">
-                                <div class="col-lg-6">
+                            <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="total_amount">Total Amount <span class="text-danger">*</span></label>
                                         <input id="total_amount" type="text" class="form-control" name="total_amount" value="{{ $total_amount }}" readonly required>
+                                        <input id="total_amount" type="text" class="form-control" name="total_amount" value="{{ $total_amount }}" readonly required hidden>
+                                        <input id="masked_total_amount" type="text" class="form-control" name="masked_total_amount" value="{{ format_currency($total_amount) }}" readonly>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="paid_amount">Received Amount <span class="text-danger">*</span></label>
                                         <input id="paid_amount" type="text" class="form-control" name="paid_amount" value="{{ $total_amount }}" required>
+                                        <input id="paid_amount" type="text" class="form-control" name="paid_amount" value="{{ $total_amount }}" required hidden>
+                                        <input id="masked_paid_amount" type="text" class="form-control" name="masked_paid_amount" value="{{ format_currency($total_amount) }}">
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +85,7 @@
                                         <input type="hidden" value="{{ $shipping }}" name="shipping_amount">
                                         <td>(+) {{ format_currency($shipping) }}</td>
                                     </tr>
-                                    <tr class="text-primary">
+                                    <tr class="text-info">
                                         <th>Grand Total</th>
                                         @php
                                             $total_with_shipping = Cart::instance($cart_instance)->total() + (float) $shipping
@@ -98,7 +102,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-info">Submit</button>
                 </div>
             </form>
         </div>

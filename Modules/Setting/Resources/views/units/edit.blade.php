@@ -46,7 +46,7 @@
                                 </div>
                                 <div class="col-lg-12 d-flex justify-content-end">
                                     <div class="form-group">
-                                        <button class="btn btn-primary">Update Unit <i class="bi bi-check"></i></button>
+                                        <button class="btn btn-info">Update Unit <i class="bi bi-check"></i></button>
                                     </div>
                                 </div>
                             </div>

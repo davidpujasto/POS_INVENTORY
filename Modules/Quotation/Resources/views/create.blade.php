@@ -75,7 +75,7 @@
                             </div>
 
                             <div class="mt-3">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info">
                                     Create Quotation <i class="bi bi-check"></i>
                                 </button>
                             </div>

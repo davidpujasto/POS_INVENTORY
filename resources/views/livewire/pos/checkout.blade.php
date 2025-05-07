@@ -17,7 +17,7 @@
                     <label for="customer_id">Customer <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <a href="{{ route('customers.create') }}" class="btn btn-primary">
+                            <a href="{{ route('customers.create') }}" class="btn btn-info">
                                 <i class="bi bi-person-plus"></i>
                             </a>
                         </div>
@@ -98,7 +98,7 @@
                                 <input type="hidden" value="{{ $shipping }}" name="shipping_amount">
                                 <td>(+) {{ format_currency($shipping) }}</td>
                             </tr>
-                            <tr class="text-primary">
+                            <tr class="text-info">
                                 <th>Grand Total</th>
                                 @php
                                     $total_with_shipping = Cart::instance($cart_instance)->total() + (float) $shipping
@@ -135,13 +135,15 @@
 
             <div class="form-group d-flex justify-content-center flex-wrap mb-0">
                 <button wire:click="resetCart" type="button" class="btn btn-pill btn-danger mr-3"><i class="bi bi-x"></i> Reset</button>
-                <button wire:loading.attr="disabled" wire:click="proceed" type="button" class="btn btn-pill btn-primary" {{  $total_amount == 0 ? 'disabled' : '' }}><i class="bi bi-check"></i> Proceed</button>
+                <button wire:loading.attr="disabled" wire:click="proceed" type="button" class="btn btn-pill btn-info" {{  $total_amount == 0 ? 'disabled' : '' }}><i class="bi bi-check"></i> Proceed</button>
             </div>
         </div>
     </div>
 
     {{--Checkout Modal--}}
     @include('livewire.pos.includes.checkout-modal')
+
+    
 
 </div>
 

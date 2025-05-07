@@ -5,7 +5,7 @@
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <i class="bi bi-search text-primary"></i>
+                            <i class="bi bi-search text-info"></i>
                         </div>
                     </div>
                     <input wire:keydown.escape="resetQuery" wire:model.live.debounce.500ms="query" type="text" class="form-control" placeholder="Type product name or code....">
@@ -17,7 +17,7 @@
     <div wire:loading class="card position-absolute mt-1 border-0" style="z-index: 1;left: 0;right: 0;">
         <div class="card-body shadow">
             <div class="d-flex justify-content-center">
-                <div class="spinner-border text-primary" role="status">
+                <div class="spinner-border text-info" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                         @endforeach
                         @if($search_results->count() >= $how_many)
                              <li class="list-group-item list-group-item-action text-center">
-                                 <a wire:click.prevent="loadMore" class="btn btn-primary btn-sm" href="#">
+                                 <a wire:click.prevent="loadMore" class="btn btn-info btn-sm" href="#">
                                      Load More <i class="bi bi-arrow-down-circle"></i>
                                  </a>
                              </li>

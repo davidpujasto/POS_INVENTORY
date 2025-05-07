@@ -27,7 +27,7 @@
                     @csrf
                     @method('patch')
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Update Role <i class="bi bi-check"></i>
+                        <button type="submit" class="btn btn-info">Update Role <i class="bi bi-check"></i>
                         </button>
                     </div>
                     <div class="card">

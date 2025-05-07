@@ -15,7 +15,7 @@
             <div class="col-lg-12">
                 @include('utils.alerts')
                 <div class="card">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header bg-info text-white">
                         <h5 class="mb-0">General Settings</h5>
                     </div>
                     <div class="card-body">
@@ -81,7 +81,7 @@
                             </div>
 
                             <div class="form-group mb-0">
-                                <button type="submit" class="btn btn-primary"><i class="bi bi-check"></i> Save Changes</button>
+                                <button type="submit" class="btn btn-info"><i class="bi bi-check"></i> Save Changes</button>
                             </div>
                         </form>
                     </div>
@@ -100,7 +100,7 @@
                     </div>
                 @endif
                 <div class="card">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header bg-danger text-white">
                         <h5 class="mb-0">Mail Settings</h5>
                     </div>
                     <div class="card-body">
@@ -171,7 +171,7 @@
                             </div>
 
                             <div class="form-group mb-0">
-                                <button type="submit" class="btn btn-primary"><i class="bi bi-check"></i> Save Changes</button>
+                                <button type="submit" class="btn btn-danger"><i class="bi bi-check"></i> Save Changes</button>
                             </div>
                         </form>
                     </div>

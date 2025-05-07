@@ -19,7 +19,7 @@
                 <div class="col-lg-12">
                     @include('utils.alerts')
                     <div class="form-group">
-                        <button class="btn btn-primary">Create Payment <i class="bi bi-check"></i></button>
+                        <button class="btn btn-info">Create Payment <i class="bi bi-check"></i></button>
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -53,7 +53,7 @@
                                         <div class="input-group">
                                             <input id="amount" type="text" class="form-control" name="amount" required value="{{ old('amount') }}">
                                             <div class="input-group-append">
-                                                <button id="getTotalAmount" class="btn btn-primary" type="button">
+                                                <button id="getTotalAmount" class="btn btn-info" type="button">
                                                     <i class="bi bi-check-square"></i>
                                                 </button>
                                             </div>

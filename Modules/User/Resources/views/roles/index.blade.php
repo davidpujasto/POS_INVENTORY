@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-body">
                         <!-- Button trigger modal -->
-                        <a href="{{ route('roles.create') }}" class="btn btn-primary">
+                        <a href="{{ route('roles.create') }}" class="btn btn-info">
                             Add Role <i class="bi bi-plus"></i>
                         </a>
 

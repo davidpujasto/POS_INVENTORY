@@ -13,6 +13,52 @@
 @livewireStyles
 
 <style>
+
+    /* Sidebar background dan teks dasar */
+.c-sidebar {
+    background-color: #1e293b !important; /* Slate-800 */
+    color: #f8fafc !important; /* Slate-50 */
+}
+
+.c-sidebar-nav {
+    overflow: visible !important;
+}
+
+.c-sidebar .c-sidebar-nav-link {
+    color: #94a3b8!important; /* Slate-400 */
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #ffffff !important; /* Slate-100 */
+
+    border-radius: 0.5rem; /* Efek membulat lebih terasa */
+}
+
+.c-sidebar .c-active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    font-weight: 700 !important;
+    border-radius: 0.5rem;
+}
+
+.c-sidebar .c-sidebar-nav-icon {
+    color: #94a3b8 !important;
+    transition: color 0.2s ease-in-out;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover .c-sidebar-nav-icon {
+    color: #38bdf8 !important; /* Sky-400 */
+}
+
+.c-sidebar .c-active .c-sidebar-nav-icon {
+    color: #38bdf8 !important;
+    font-weight: bold !important;
+}
+
     div.dataTables_wrapper div.dataTables_length select {
         width: 65px;
         display: inline-block;

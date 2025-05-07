@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-12">
                 @include('utils.alerts')
-                <h3>Hello, <span class="text-primary">{{ auth()->user()->name }}</span></h3>
+                <h3>Hello, <span class="text-info">{{ auth()->user()->name }}</span></h3>
                 <p class="font-italic">Change your profile information & password from here...</p>
             </div>
             <div class="col-lg-6">
@@ -49,7 +49,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Update Profile <i class="bi bi-check"></i></button>
+                                <button type="submit" class="btn btn-info">Update Profile <i class="bi bi-check"></i></button>
                             </div>
                         </form>
                     </div>
@@ -83,7 +83,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Update Password <i class="bi bi-check"></i></button>
+                                <button type="submit" class="btn btn-info">Update Password <i class="bi bi-check"></i></button>
                             </div>
                         </form>
                     </div>

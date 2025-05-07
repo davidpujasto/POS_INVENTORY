@@ -47,7 +47,7 @@
                                 <textarea name="note" id="note" rows="5" class="form-control"></textarea>
                             </div>
                             <div class="mt-3">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info">
                                     Create Adjustment <i class="bi bi-check"></i>
                                 </button>
                             </div>

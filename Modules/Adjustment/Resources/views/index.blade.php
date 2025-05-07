@@ -19,7 +19,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <a href="{{ route('adjustments.create') }}" class="btn btn-primary">
+                        <a href="{{ route('adjustments.create') }}" class="btn btn-info">
                             Add Adjustment <i class="bi bi-plus"></i>
                         </a>
 

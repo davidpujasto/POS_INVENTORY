@@ -20,7 +20,7 @@
             <div class="col-12">
                 <div class="card border-0 shadow-sm">
                     <div class="card-body">
-                        <a href="{{ route('units.create') }}" class="btn btn-primary">
+                        <a href="{{ route('units.create') }}" class="btn btn-info">
                             Add Unit <i class="bi bi-plus"></i>
                         </a>
 
@@ -47,7 +47,7 @@
                                         <td class="align-middle">{{ $unit->operator }}</td>
                                         <td class="align-middle">{{ $unit->operation_value }}</td>
                                         <td class="align-middle">
-                                            <a href="{{ route('units.edit', $unit) }}" class="btn btn-primary btn-sm">
+                                            <a href="{{ route('units.edit', $unit) }}" class="btn btn-info btn-sm">
                                                 <i class="bi bi-pencil"></i>
                                             </a>
                                             <button id="delete" class="btn btn-danger btn-sm delete-confirm" onclick="

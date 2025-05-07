@@ -3,7 +3,7 @@
         {{ $data->status }}
     </span>
 @elseif ($data->status == 'Shipped')
-    <span class="badge badge-primary">
+    <span class="badge badge-info">
         {{ $data->status }}
     </span>
 @else

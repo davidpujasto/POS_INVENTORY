@@ -8,7 +8,6 @@
 
 # Local Installation
 
-- run `` git clone https://github.com/FahimAnzamDip/triangle-pos.git ``
 - run ``composer install `` 
 - run `` npm install ``
 - run ``npm run dev``
@@ -34,7 +33,7 @@ This will start the application along with the mysql database using docker compo
 > Email: super.admin@test.com || Password: 12345678
 
 ## Demo
-![Triangle POS](public/images/screenshot.jpg)
+![Agrapana POS](public/images/screenshot.jpg)
 **Live Demo:** will update soon
 
 ## Triangle POS Features
